@@ -324,7 +324,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 
   .title__white {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 9.9rem;
     line-height: 1.1;
     color: #fff;
@@ -336,7 +336,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
 
   .txt__white {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 2rem;
     line-height: 1.8;
     color: #fff;
@@ -906,11 +906,11 @@ img {
 
 // MARATHON BENEFITS
 .container--eco {
-  padding: 0 8rem 8rem 0;
+  padding: 0 8rem 0 0;
 }
 @media screen and (max-width: 768px) {
   .container--eco {
-    padding: 0 1.6rem 8rem;
+    padding: 0 1.6rem 0;
   }
   .container--eco .title {
     max-width: 100%;
@@ -1093,5 +1093,47 @@ img {
 
 .button__center {
   text-align: center;
-  margin: 0 auto;
+  margin: 7rem auto;
+}
+
+// BIG INFO #2
+.info-big--wrapper_2 {
+  margin-top: 0;
+  padding: 65.8rem 0 14.2rem 0;
+  background-image: url("../images/info_big_bg_2.jpg");
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .info-big--wrapper_2 {
+    padding: 47.9rem 0 7.7rem 0;
+    background-image: url("../images/info_big_bg_2_mob.jpg");
+    background-position: top center;
+  }
+}
+.info-big--wrapper_2 .title__white {
+  font-size: 7.2rem;
+}
+@media screen and (max-width: 768px) {
+  .info-big--wrapper_2 .title__white {
+    font-size: 3.2rem;
+  }
+}
+.info-big--wrapper_2 .social {
+  top: 51.9rem;
+}
+.info-big--wrapper_2 .info-color__txt {
+  top: 57.4rem;
+}
+@media screen and (max-width: 768px) {
+  .info-big--wrapper_2 .info-color__txt {
+    top: 43.4rem;
+  }
+}
+.info-big--wrapper_2 .txt__white {
+  max-width: 123rem;
+}
+
+.info-color__txt--blue {
+  background: #019cfe;
+  color: #fff;
 }
