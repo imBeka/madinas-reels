@@ -21,6 +21,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
   body {
     line-height: 1;
+    overflow-x: hidden;
   }
   
   ol, ul {
@@ -480,7 +481,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .info__wrapper--pink {
   position: relative;
-  padding: 5.7rem 0 21.1rem 0;
+  // padding: 5.7rem 0 21.1rem 0;
   margin-bottom: 3rem;
 }
 @media screen and (max-width: 768px) {
@@ -901,4 +902,196 @@ img {
   img {
     box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
   }
+}
+
+// MARATHON BENEFITS
+.container--eco {
+  padding: 0 8rem 8rem 0;
+}
+@media screen and (max-width: 768px) {
+  .container--eco {
+    padding: 0 1.6rem 8rem;
+  }
+  .container--eco .title {
+    max-width: 100%;
+  }
+}
+
+.title--eco {
+  font-weight: 400;
+}
+
+.eco {
+  position: relative;
+  margin-top: 9rem;
+  min-height: 132.3rem;
+  margin: 9rem 0 0;
+}
+@media screen and (max-width: 768px) {
+  .eco {
+    margin: 8rem 0;
+  }
+}
+.eco::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/eco_bg.jpg") no-repeat;
+  background-size: cover;
+  width: 172.8rem;
+  height: 132.3rem;
+  z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .eco::before {
+    background-image: url("../images/eco_bg_mob.jpg");
+    width: 37.5rem;
+    height: 61rem;
+    top: -59rem;
+    left: -1.6rem;
+  }
+}
+.eco-blocks {
+  width: 90rem;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .eco-blocks {
+    width: 100%;
+    margin-top: 57.9rem;
+    position: relative;
+  }
+  // .eco-blocks::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 50%;
+  //   transform: translate(-50%, 0);
+  //   // background: url("../images/eco_blocks_bg.png") no-repeat;
+  //   background-size: contain;
+  //   width: 59rem;
+  //   height: 166.7rem;
+  //   z-index: -1;
+  // }
+}
+.eco-block {
+  width: 100%;
+  border-radius: 3.2rem;
+  background: #fff;
+  box-shadow: 0 0.8rem 5rem rgba(34, 61, 116, 0.08);
+  padding: 4rem 3.1rem 4rem 6rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .eco-block {
+    flex-direction: column;
+    padding: 3rem 2.1rem;
+  }
+}
+.eco-block:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.eco-block__info-desc {
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #0b2234;
+  margin-bottom: 2.2rem;
+}
+@media screen and (max-width: 768px) {
+  .eco-block__info-desc {
+    margin: 3.5rem 0 1.9rem;
+    line-height: 1.45;
+  }
+}
+.eco-block__info-list {
+  padding-left: 3rem;
+}
+.eco-block__info-item {
+  position: relative;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.62;
+  color: #0b2234;
+}
+@media screen and (max-width: 768px) {
+  .eco-block__info-item {
+    font-size: 1.4rem;
+  }
+}
+.eco-block__info-item:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+@media screen and (max-width: 768px) {
+  .eco-block__info-item:not(:last-child) {
+    margin-bottom: 2.8rem;
+  }
+}
+.eco-block__info-item::before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  left: -3rem;
+  width: 1.5rem;
+  height: 1rem;
+  background: url("../images/check.svg") no-repeat;
+  background-size: contain;
+}
+.eco-block__num {
+  position: relative;
+  font-family: Colus;
+  font-size: 7.9rem;
+  line-height: 1;
+  color: #0b2234;
+  margin-right: 6.1rem;
+  z-index: 1;
+}
+@media screen and (max-width: 768px) {
+  .eco-block__num {
+    margin-right: 0;
+  }
+}
+.eco-block__num-icon {
+  display: inline-block;
+  background: url("../icons/one.svg") no-repeat;
+  background-size: contain;
+  width: 2.4rem;
+  height: 5.3rem;
+}
+.eco-block__num-icon--2 {
+  background-image: url("../icons/two.svg");
+  width: 3.8rem;
+  height: 5.4rem;
+}
+.eco-block__num-icon--3 {
+  background-image: url("../icons/three.svg");
+  width: 3.6rem;
+  height: 5.4rem;
+}
+.eco-block__num-icon--4 {
+  background-image: url("../icons/four.svg");
+  width: 4.3rem;
+  height: 5.2rem;
+}
+.eco-block__num::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 5.6rem;
+  height: 5.6rem;
+  background: #caff67;
+  box-shadow: 0 1rem 2rem rgba(202, 255, 103, 0.33);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.button__center {
+  text-align: center;
+  margin: 0 auto;
 }
