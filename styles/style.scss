@@ -1137,3 +1137,26 @@ img {
   background: #019cfe;
   color: #fff;
 }
+
+// CAROUSLE REVIEWS
+#review-item-1:checked ~ .cards #review-song-3, #review-item-2:checked ~ .cards #review-song-1, #review-item-3:checked ~ .cards #review-song-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#review-item-1:checked ~ .cards #review-song-2, #review-item-2:checked ~ .cards #review-song-3, #review-item-3:checked ~ .cards #review-song-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#review-item-1:checked ~ .cards #review-song-1, #review-item-2:checked ~ .cards #review-song-2, #review-item-3:checked ~ .cards #review-song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+  
+  img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
