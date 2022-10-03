@@ -22,6 +22,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   body {
     line-height: 1;
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   
   ol, ul {
@@ -210,34 +211,34 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 0.2em 0;
   }
   
-  @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-SemiBold.woff2") format("woff2"), url("../fonts/Roboto-SemiBold.woff") format("woff"), url("../fonts/Roboto-SemiBold.ttf") format("truetype");
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
+  // @font-face {
+  //   font-family: "Roboto";
+  //   src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  //   font-weight: normal;
+  //   font-style: normal;
+  //   font-display: swap;
+  // }
+  // @font-face {
+  //   font-family: "Roboto";
+  //   src: url("../fonts/Roboto-SemiBold.woff2") format("woff2"), url("../fonts/Roboto-SemiBold.woff") format("woff"), url("../fonts/Roboto-SemiBold.ttf") format("truetype");
+  //   font-weight: 600;
+  //   font-style: normal;
+  //   font-display: swap;
+  // }
+  // @font-face {
+  //   font-family: "Roboto";
+  //   src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+  //   font-weight: 500;
+  //   font-style: normal;
+  //   font-display: swap;
+  // }
+  // @font-face {
+  //   font-family: "Roboto";
+  //   src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype");
+  //   font-weight: bold;
+  //   font-style: normal;
+  //   font-display: swap;
+  // }
   body,
   html {
     -webkit-font-smoothing: antialiased;
@@ -290,10 +291,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
   .container--info_left {
     padding: 0 9.7rem 0 4.9rem;
+    margin-bottom: 20rem;
   }
   @media screen and (max-width: 768px) {
     .container--info_left {
       padding: 0 1.6rem;
+      margin-bottom: 0;
     }
   }
 
@@ -534,7 +537,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .info-block {
-  margin-top: 10rem;
+  margin-top: 20rem;
   width: 74.9rem;
   position: relative;
   z-index: 10;
@@ -631,7 +634,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 @media screen and (max-width: 768px) {
   .info-block__list {
-    margin: 54.1rem 0 3rem;
+    margin: 57rem 0 3rem;
     position: relative;
     z-index: 10;
   }
@@ -1056,28 +1059,28 @@ img {
     margin-right: 0;
   }
 }
-.eco-block__num-icon {
-  display: inline-block;
-  background: url("../icons/one.svg") no-repeat;
-  background-size: contain;
-  width: 2.4rem;
-  height: 5.3rem;
-}
-.eco-block__num-icon--2 {
-  background-image: url("../icons/two.svg");
-  width: 3.8rem;
-  height: 5.4rem;
-}
-.eco-block__num-icon--3 {
-  background-image: url("../icons/three.svg");
-  width: 3.6rem;
-  height: 5.4rem;
-}
-.eco-block__num-icon--4 {
-  background-image: url("../icons/four.svg");
-  width: 4.3rem;
-  height: 5.2rem;
-}
+// .eco-block__num-icon {
+//   display: inline-block;
+//   background: url("../icons/one.svg") no-repeat;
+//   background-size: contain;
+//   width: 2.4rem;
+//   height: 5.3rem;
+// }
+// .eco-block__num-icon--2 {
+//   background-image: url("../icons/two.svg");
+//   width: 3.8rem;
+//   height: 5.4rem;
+// }
+// .eco-block__num-icon--3 {
+//   background-image: url("../icons/three.svg");
+//   width: 3.6rem;
+//   height: 5.4rem;
+// }
+// .eco-block__num-icon--4 {
+//   background-image: url("../icons/four.svg");
+//   width: 4.3rem;
+//   height: 5.2rem;
+// }
 .eco-block__num::before {
   content: "";
   position: absolute;
@@ -1180,17 +1183,17 @@ img {
     margin: 3.7rem auto 8rem;
   }
 }
-.prices::before {
-  content: "";
-  position: absolute;
-  top: 10rem;
-  left: 50%;
-  transform: translate(-50%, 0);
-  background: url("../images/prices_bg.jpg") no-repeat;
-  background-size: contain;
-  width: 172.8rem;
-  height: 108rem;
-}
+// .prices::before {
+//   content: "";
+//   position: absolute;
+//   top: 10rem;
+//   left: 50%;
+//   transform: translate(-50%, 0);
+//   background: url("../images/prices_bg.jpg") no-repeat;
+//   background-size: contain;
+//   width: 172.8rem;
+//   height: 108rem;
+// }
 
 .price {
   width: 50%;
@@ -1362,7 +1365,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
   }
 }
 .footer-block {
@@ -1374,7 +1376,7 @@ img {
   .footer-block {
     flex-direction: column;
     align-items: center;
-    margin-top: 8rem;
+    margin: 3rem 0;
   }
 }
 .footer-block__links {
@@ -1419,4 +1421,35 @@ img {
 }
 .footer-block__txt a {
   color: #019CFE;
+}
+
+// ANIMATIONS
+.transform {
+  transform: translate(0, 20rem);
+  transition: 1s ease transform;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .transform {
+    transform: translate(0, 15rem);
+  }
+}
+.transform.animated {
+  transform: none;
+  opacity: 1;
+}
+
+.animated .info-img__block .info-img__block-product:after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(to top, rgba(229, 172, 142, 0), rgba(255, 255, 255, 0.3) 50%, rgba(229, 172, 142, 0));
+  transform: rotateZ(-60deg) translate(-5em, 7.5em);
+  opacity: 0;
+  animation: sheens 7s infinite;
+  animation-iteration-count: 3;
+  z-index: 1;
 }
