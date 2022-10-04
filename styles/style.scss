@@ -314,6 +314,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding: 60.3rem 0 13.4rem 0;
     background: $mainImage no-repeat;
     background-size: cover;
+    background-position-y: -137rem;
     margin-top: -5rem;
     position: relative;
     z-index: -1;
@@ -672,7 +673,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 @media screen and (max-width: 768px) {
   .info-block__list {
-    margin: 57rem 0 3rem;
+    margin: 61.1rem 0 3rem;
     position: relative;
     z-index: 10;
   }
